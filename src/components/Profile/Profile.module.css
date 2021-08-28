@@ -1,0 +1,37 @@
+.profile {
+  width: 250px;
+  text-align: center;
+}
+.description {
+  font-weight: 500;
+}
+.avatar {
+  height: 80px;
+  width: 80px;
+}
+.name {
+  color: rgb(180, 180, 180);
+}
+.tag {
+  color: rgb(116, 112, 112);
+}
+.location {
+  color: rgb(66, 25, 25);
+}
+
+.stats {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.label {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+}
+.quantity {
+  font-size: 14px;
+  font-weight: 400;
+}
