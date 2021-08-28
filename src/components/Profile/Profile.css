@@ -1,0 +1,14 @@
+.profile {
+  text-align: center;
+}
+.description {
+  display: block;
+}
+.avatar {
+  height: 30px;
+  width: 30px;
+}
+.stats {
+  display: flex;
+  list-style: none;
+}
