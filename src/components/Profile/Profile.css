@@ -1,37 +1,37 @@
-.profile {
+.Profile {
   margin-left: 50px;
   width: 260px;
   padding: 20px;
   text-align: center;
   background: rgb(212, 211, 211);
 }
-.description {
+.Description {
   padding: 20px;
   margin: 0;
   background: rgb(255, 254, 254);
   font-weight: 500;
 }
-.avatar {
+.Avatar {
   height: 80px;
   width: 80px;
   margin-bottom: 20px;
 }
-.name {
+.Name {
   font-weight: 700;
   font-size: 20px;
   color: rgb(66, 25, 25);
 }
-.tag {
+.Tag {
   margin-top: 10px;
   font-size: 15px;
   color: rgb(180, 180, 180);
 }
-.location {
+.Location {
   margin-top: 10px;
   color: rgb(180, 180, 180);
 }
 
-.stats {
+.Stats {
   display: flex;
   height: 60px;
   padding: 10px;
@@ -39,7 +39,7 @@
   text-align: center;
   background: rgba(255, 249, 249, 0.637);
 }
-.label {
+.Label {
   display: flex;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -47,7 +47,7 @@
   font-size: 15px;
   color: rgb(160, 159, 159);
 }
-.quantity {
+.Quantity {
   font-weight: 700;
   color: rgb(66, 25, 25);
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import './TransactionHistory.css';
 
 type  Items = {
@@ -10,7 +9,7 @@ type  Items = {
 
 interface Props {
   items: Items[];
-  
+  initialOptionPos?: number;
 }
 
 export const TransactionHistory = ({ items }:Props) => {

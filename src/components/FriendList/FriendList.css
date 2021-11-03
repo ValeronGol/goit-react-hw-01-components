@@ -1,8 +1,8 @@
-.friendLlist {
+.FriendLlist {
   text-align: center;
   font-weight: 800;
 }
-.item {
+.Item {
   display: flex;
   align-items: center;
   width: 500px;
@@ -11,11 +11,11 @@
   border-radius: 4px;
   margin-bottom: 10px;
 }
-.avatar {
+.Avatar {
   object-fit: cover;
 }
 
-.status {
+.Status {
   display: block;
   width: 20px;
   height: 20px;
@@ -23,16 +23,16 @@
   margin: 5px;
 }
 
-.online {
+.Online {
   composes: status;
   background-color: green;
 }
-.offline {
+.Offline {
   composes: status;
   background-color: red;
 }
 
-.name {
+.Name {
   margin-left: 10px;
   font-weight: bold;
 }

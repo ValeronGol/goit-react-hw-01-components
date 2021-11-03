@@ -1,32 +1,35 @@
-import PropTypes from 'prop-types';
-import css from './Statistics.module.css';
-import { colorPicker } from 'utils/colorPicker';
+import  './Statistics.css';
+import { colorPicker } from '../../utils/colorPicker';
 
-export const Statistics = ({ title, stats }) => {
+type  Stats = {
+  id:string;
+  label: string;
+  percentage: number;
+};
+
+interface Props {
+  stats: Stats[];
+  title?: string;
+}
+
+
+export const Statistics = ({ title="", stats }:Props) => {
   return (
-    <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title}</h2>}
-      <ul className={css.statList}>
+    <section className="Statistics">
+      {title && <h2 className="Title">{title}</h2>}
+      <ul className="StatList">
         {stats.map(stat => (
           <li
-            className={css.item}
+            className="Item"
             key={stat.id}
             style={{ backgroundColor: colorPicker() }}
           >
-            <span className={css.label}>{stat.label}</span>
-            <span className={css.percentage}>{stat.percentage}%</span>
+            <span className="Label">{stat.label}</span>
+            <span className="Percentage">{stat.percentage}%</span>
           </li>
         ))}
       </ul>
     </section>
   );
 };
-Statistics.propTypes = {
-  stats: PropTypes.arrayOf(
-    PropTypes.exact({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
-    }),
-  ),
-};
+

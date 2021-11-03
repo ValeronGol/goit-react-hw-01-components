@@ -1,18 +1,18 @@
-import PropTypes from 'prop-types';
-import css from './FriendList.module.css';
+import  './FriendList.css';
 
-export const FriendListItem = ({ isOnline, avatar, name }) => {
+interface Props {
+  isOnline: boolean;
+  avatar: string;
+  name: string;
+}
+
+export const FriendListItem = ({ isOnline, avatar, name }:Props) => {
   return (
-    <div className={css.item}>
-      <span className={isOnline ? css.online : css.offline}></span>
-      <img className={css.avatar} src={avatar} alt={name} width="48" />
-      <p className={css.name}>{name}</p>
+    <div className="Item">
+      <span className={isOnline ? "Online ": "Offline"}></span>
+      <img className="Avatar" src={avatar} alt={name} width="48" />
+      <p className="Name">{name}</p>
     </div>
   );
 };
 
-FriendListItem.propTypes = {
-  isOnline: PropTypes.bool.isRequired,
-  name: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-};
