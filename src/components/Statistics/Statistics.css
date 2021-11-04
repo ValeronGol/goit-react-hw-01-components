@@ -1,13 +1,16 @@
 .Statistics {
-  text-align: center;
-  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 400px;
+  text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
 .Title {
-  padding: 20px;
-  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 25px;
   background: rgb(253, 253, 253);
   font-weight: 600;
 }
@@ -18,13 +21,13 @@
   margin: 0;
 }
 .Item {
+  display: flex;
+
   color: white;
   width: 100%;
   height: 60px;
 }
 .Label {
-  font-weight: 400;
-  font-size: 15px;
   color: rgb(206, 199, 199);
 }
 .Percentage {

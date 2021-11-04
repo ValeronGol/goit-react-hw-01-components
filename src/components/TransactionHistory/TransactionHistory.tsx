@@ -14,25 +14,27 @@ interface Props {
 
 export const TransactionHistory = ({ items }:Props) => {
   return (
-    <table className="Container">
-      <thead>
-        <tr className="Title">
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+    <div className="Container">
+    <table className="TransactionHistory">
+      <thead className="Head">
+        <tr >
+          <th className="Column">Type</th>
+          <th className="Column">Amount</th>
+          <th className="Column">Currency</th>
         </tr>
       </thead>
-
-      <tbody>
+      <tbody className="Body">
         {items.map(item => (
-          <tr className="Label" key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
-          </tr>
+          <tr className="Trow" key={item.id}>
+            <td className="Tcolumn">{item.type}</td>
+            <td className="Tcolumn">{item.amount}</td>
+            <td className="Tcolumn">{item.currency}</td>
+          </tr> 
         ))}
       </tbody>
     </table>
+        </div>
+
   );
 };
 
