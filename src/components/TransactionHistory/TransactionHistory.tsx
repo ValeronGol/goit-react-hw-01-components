@@ -1,6 +1,6 @@
 import './TransactionHistory.css';
 
-type  Items = {
+type Items = {
   id: string;
   type: string;
   amount: string;
@@ -12,12 +12,11 @@ interface Props {
   initialOptionPos?: number;
 }
 
-export const TransactionHistory = ({ items }:Props) => {
+export const TransactionHistory = ({ items }: Props) => {
   return (
-    <div className="Container">
     <table className="TransactionHistory">
       <thead className="Head">
-        <tr >
+        <tr>
           <th className="Column">Type</th>
           <th className="Column">Amount</th>
           <th className="Column">Currency</th>
@@ -29,13 +28,9 @@ export const TransactionHistory = ({ items }:Props) => {
             <td className="Tcolumn">{item.type}</td>
             <td className="Tcolumn">{item.amount}</td>
             <td className="Tcolumn">{item.currency}</td>
-          </tr> 
+          </tr>
         ))}
       </tbody>
     </table>
-        </div>
-
   );
 };
-
-

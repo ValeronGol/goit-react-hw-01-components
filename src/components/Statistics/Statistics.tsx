@@ -1,5 +1,5 @@
-import  './Statistics.css';
 import { colorPicker } from '../../utils/colorPicker';
+import  css  from './Statistics.module.css'
 
 type  Stats = {
   id:string;
@@ -15,17 +15,17 @@ interface Props {
 
 export const Statistics = ({ title="", stats }:Props) => {
   return (
-    <section className="Statistics">
-      {title && <h2 className="Title">{title}</h2>}
-      <ul className="StatList">
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
+      <ul className={css.statList}>
         {stats.map(stat => (
           <li
-            className="Item"
+            className={css.item}
             key={stat.id}
             style={{ backgroundColor: colorPicker() }}
           >
-            <span className="Label">{stat.label}</span>
-            <span className="Percentage">{stat.percentage}%</span>
+            <span className={css.label}>{stat.label}</span>
+            <span className={css.percentage}>{stat.percentage}%</span>
           </li>
         ))}
       </ul>
